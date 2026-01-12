@@ -1,0 +1,25 @@
+# Arquivos de documentação em inglês (não commitar)
+CONCEPTS.md
+CREATE NEAR ACCOUNT AND CLI.md
+MULTICHAIN.md
+NETWORKS AND RUNTIME.md
+SMART CONTRACTS AND INTRODUCTION.md
+WHAT IS NEAR.MD
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.bak
+*~
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo

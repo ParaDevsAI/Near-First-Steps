@@ -1,0 +1,34 @@
+{
+  "name": "near-auction-contract",
+  "version": "2.0.0",
+  "description": "Contrato de leilão com NFT em TypeScript para NEAR Protocol",
+  "main": "src/auction.ts",
+  "type": "module",
+  "scripts": {
+    "build": "near-sdk-js build src/auction.ts build/auction.wasm",
+    "build:js": "near-sdk-js build src/auction.js build/auction-js.wasm",
+    "test": "npm run build && ava tests/*.test.js --timeout=2m",
+    "deploy": "npm run build && near deploy --wasmFile build/auction.wasm --accountId",
+    "clean": "rm -rf build node_modules"
+  },
+  "keywords": [
+    "near",
+    "smart-contract",
+    "auction",
+    "blockchain",
+    "typescript",
+    "nft"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "near-sdk-js": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ava": "^6.0.1",
+    "near-cli": "^4.0.0",
+    "near-workspaces": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
